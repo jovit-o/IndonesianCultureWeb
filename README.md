@@ -19,14 +19,16 @@ Member Branch
 
 Simple Workflow
 Pull main
-   ↓
-Work on your branch
-   ↓
+>
+Kerja
+>
 git add .
-   ↓
+>
 git commit -m "..."
-   ↓
+>
 git push origin member*
+
+(member* diganti dngn nomor masing2, contoh: git push origin member3)
 
 
 Info:
