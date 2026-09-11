@@ -23,7 +23,7 @@ Pull main
 
 Kerja
 
-git add .
+git add .   
 
 git commit -m "..."
 
@@ -34,3 +34,5 @@ git push origin member*
 
 Info:
 - branch main, member1, member2, member3 semuanya beda. makanya setiap sebelum kerja harus "git pull origin main"(gunanya biar in sync filenya sama yang lain). setiap ada update di masing-masing branch member nanti perlahan diupdate ke main. Gunanya updatenya perlahan biar nanti pada saat ada 2 orang yang kerja bersamaan ga ada error/aneh aneh yang terjadi.
+
+- Kalo kamu git pull origin main, tapi kamu udah ada ngerjain sesuatu di branch mu kerjaan mu bisa ngilang. jadi nanti git push dulu ke branch mu sendiri, nanti kalo sudah gabung sama main baru bisa git pull lagi.
