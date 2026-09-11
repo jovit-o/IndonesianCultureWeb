@@ -4,8 +4,11 @@ Member Branch
  - Jovito = member3
 
 
+
 Valerie = adat, kuliner, sejarah, seni
+
 Jovito = beranda, about, map
+
 Alice = css, menyesuaikan seluruh halamannya.
 
 
@@ -13,13 +16,14 @@ Alice = css, menyesuaikan seluruh halamannya.
 2. Kerjain websitenya.
 3. Setelah selesai kerja:
     git add . (jangan lupa titik)
+
     git commit -m "Describe what you changed"
 
     contoh: git commit -m "Menambahkan berita
-4. git push origin your-branch-name
+4. git push origin member*
 
     Example:
-    git push origin member-2
+    git push origin member3
 
 
 Simplenya:
