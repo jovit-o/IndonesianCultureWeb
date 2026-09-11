@@ -20,3 +20,67 @@ main {
 article {
     margin-top: 20px;
 }
+
+
+/*buat halaman map*/
+
+.map-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container img:first-child {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.map-pin {
+    position: absolute;
+    width: 30px !important;
+    height: auto;
+    left: 45%;
+    top: 65%;
+    cursor: pointer;
+}
+
+/*.map-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container img {
+    width: 100%;
+    display: block;
+}
+*/
+
+/*pinpoint below*/
+/*
+.map-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container > img:first-child {
+    width: 100%;
+    display: block;
+}
+
+.map-pin {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    left: 45%;
+    top: 65%;
+    cursor: pointer;
+}
+*/
+/*buat halaman map*/
+
+
