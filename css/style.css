@@ -23,7 +23,6 @@ article {
 
 
 /*buat halaman map*/
-
 .map-container {
     position: relative;
     width: 80%;
@@ -31,56 +30,57 @@ article {
     margin: 0 auto;
 }
 
-.map-container img:first-child {
-    width: 100%;
+.map-base {
+    width:100%;
     height: auto;
     display: block;
 }
 
-.map-pin {
+.pin-wrapper {
     position: absolute;
-    width: 30px !important;
-    height: auto;
-    left: 45%;
-    top: 65%;
-    cursor: pointer;
 }
 
-/*.map-container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.map-container img {
-    width: 100%;
-    display: block;
-}
-*/
-
-/*pinpoint below*/
-/*
-.map-container {
-    position: relative;
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.map-container > img:first-child {
-    width: 100%;
-    display: block;
-}
-
-.map-pin {
-    position: absolute;
+.map-pin {  
     width: 30px;
     height: auto;
-    left: 45%;
-    top: 65%;
     cursor: pointer;
 }
-*/
+
+.popup-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.pin-popup {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.pin-popup p {
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+.pin-wrapper:hover .pin-popup {
+    display: block;
+}
+
+/* each pin's position on the map */
+.jakarta-pin {left: 28%; top: 60%;}
+.bali-pin {left: 43%; top: 70%;}
+.yogyakarta-pin {left: 34%; top: 69%;}
+
 /*buat halaman map*/
 
 
