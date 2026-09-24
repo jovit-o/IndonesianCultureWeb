@@ -4729,18 +4729,25 @@ input, select, textarea {
     position: absolute;
     top: 35px;
     left: 0;
-    width: 200px;
+    width: 400px;
     background: white;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     z-index: 10;
+	gap: 3px;
 }
 
-.pin-popup p {
+.pin-popup h3, 
+.pin-popup h4{margin: 0 0 2px 0; line-height: 1.2;}
+
+.pin-popup p{
     text-align: justify;
     overflow-wrap: break-word;
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 0 0 1px 0;
 }
 
 .pin-wrapper:hover .pin-popup {
@@ -4748,10 +4755,15 @@ input, select, textarea {
 }
 
 /* each pin's position on the map */
-.jakarta-pin {left: 26%; top: 55%;}
-.bali-pin {left: 42%; top: 66%;}
-.yogyakarta-pin {left: 33%; top: 63%;}
-/*.jakarta-pin {left: 28%; top: 60%;}*/
+.jakarta-pin {left: 26.5%; top: 58%;}
+.bali-pin {left: 43%; top: 70%;}
+.yogyakarta-pin {left: 34%; top: 68%;}
+.magelang-pin {left: 32%; top: 62%}
+.tanatoraja-pin {left: 52%; top: 42%}
+/*jember  harusnya disini, cuma gara gara keramean ga muat pinnya*/
+.padang-pin {left: 14%; top: 30%}
+.papegunungan-pin {left: 92%; top: 48%}
+/*yang kurang: Magelang, Tana Toraja, Jember, Padang*/
 /*buat halaman map*/
 
 
