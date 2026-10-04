@@ -4765,3 +4765,15 @@ input, select, textarea {
 .papegunungan-pin {left: 92%; top: 48%}
 /*yang kurang: Magelang, Tana Toraja, Jember, Padang*/
 /*buat halaman map*/
+
+/* paragraf sejajar dengan judul (angka + teks) */
+.adat-indent {
+	margin-left: 1.7rem;
+	text-indent: 2.5rem;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 736px) {
+	.adat-indent { margin-left: 1.4rem; }
+}
