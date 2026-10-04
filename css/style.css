@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,6 +24,7 @@ article {
 
 
 /*buat halaman map*/
+
 .map-container {
     position: relative;
     width: 80%;
@@ -75,12 +77,6 @@ article {
 .pin-wrapper:hover .pin-popup {
     display: block;
 }
-
-/* each pin's position on the map */
-.jakarta-pin {left: 28%; top: 60%;}
-.bali-pin {left: 43%; top: 70%;}
-.yogyakarta-pin {left: 34%; top: 69%;}
-
 /*buat halaman map*/
 
 
