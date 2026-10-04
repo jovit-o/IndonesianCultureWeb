@@ -114,7 +114,8 @@
                     salah satu titik kunjungan wisatawan yang ingin mengenal sejarah Jakarta.
                 </p>
                 <ul class="actions special">
-                    <li><a href="https://sites.google.com/view/klikkotatua?pli=1&authuser=0 " class="button primary">Selengkapnya</a></li>
+                    <li><a href="https://sites.google.com/view/klikkotatua?pli=1&authuser=0 "
+                            class="button primary">Selengkapnya</a></li>
                 </ul>
             </section>
 
@@ -133,6 +134,29 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var targets = document.querySelectorAll(
+                    ".image-review-row, .adat-text, .actions.special"
+                );
+
+                if (!("IntersectionObserver" in window)) return;
+
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                targets.forEach(function (el) {
+                    el.classList.add("reveal");
+                    observer.observe(el);
+                });
+            });
+        </script>
     </div>
 </body>
 

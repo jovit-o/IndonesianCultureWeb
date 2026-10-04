@@ -65,7 +65,8 @@
                     pengalaman budaya yang kuat bagi pengunjung.
                 </p>
                 <ul class="actions special">
-                    <li><a href=" https://ticket.injourneydestination.id/en/ramayana-ballet-prambanan/ " class="button primary">Selengkapnya</a></li>
+                    <li><a href=" https://ticket.injourneydestination.id/en/ramayana-ballet-prambanan/ "
+                            class="button primary">Selengkapnya</a></li>
                 </ul>
                 <!-- 2 -->
                 <h3 class="adat-title" style="text-align: left; margin-bottom: 1.5rem; margin-top: 3rem;">2. Tari Hudoq
@@ -95,7 +96,8 @@
                     Dayak menghormati alam, leluhur, dan kebersamaan komunitas mereka.
                 </p>
                 <ul class="actions special">
-                    <li><a href="https://dispar.kaltimprov.go.id/destinasi/tari-hudoq " class="button primary">Selengkapnya</a></li>
+                    <li><a href="https://dispar.kaltimprov.go.id/destinasi/tari-hudoq "
+                            class="button primary">Selengkapnya</a></li>
                 </ul>
                 <!-- 3 -->
                 <h3 class="adat-title" style="text-align: left; margin-bottom: 1.5rem; margin-top: 3rem;">3. Jember
@@ -141,6 +143,29 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var targets = document.querySelectorAll(
+                    ".image-review-row, .adat-text, .actions.special"
+                );
+
+                if (!("IntersectionObserver" in window)) return;
+
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                targets.forEach(function (el) {
+                    el.classList.add("reveal");
+                    observer.observe(el);
+                });
+            });
+        </script>
     </div>
 </body>
 

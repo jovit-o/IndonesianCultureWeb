@@ -4620,7 +4620,6 @@ input, select, textarea {
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
 			width: 7rem;
 		}
 
@@ -4756,17 +4755,17 @@ input, select, textarea {
 
 /* each pin's position on the map */
 .jakarta-pin {left: 26.5%; top: 58%;}
-.bali-pin {lef  t: 43%; top: 70%;}
+.bali-pin {left: 43%; top: 70%;}
 .yogyakarta-pin {left: 34%; top: 68%;}
-.magelang-pin {left: 32%; top: 62%}
-.tanatoraja-pin {left: 52%; top: 40%}
-.jember-pin {left: 39%; top: 67%}
-.padang-pin {left: 14%; top: 30%}
-.papegunungan-pin {left: 92%; top: 48%}
-.kaliselatan-pin {left: 42.5%; top: 42%}
-.kalitimur-pin {left:45%; top: 23%}
-.sumautara-pin {left:11%; top: 14%}
-.sulaselatan-pin {left:52%; top:53%}
+.magelang-pin {left: 32%; top: 62%;}
+.tanatoraja-pin {left: 52%; top: 40%;}
+.jember-pin {left: 39%; top: 67%;}
+.padang-pin {left: 14%; top: 30%;}
+.papegunungan-pin {left: 92%; top: 48%;}
+.kaliselatan-pin {left: 42.5%; top: 42%;}
+.kalitimur-pin {left:45%; top: 23%;}
+.sumautara-pin {left:11%; top: 14%;}
+.sulaselatan-pin {left:52%; top:53%;}
 /*buat halaman map*/
 
 /* paragraf sejajar dengan judul (angka + teks) */
@@ -4807,5 +4806,44 @@ input, select, textarea {
     .image-review-row .review-box {
         max-width: 100%;
         width: 100%;
+    }
+}
+
+.image-review-row .image.main {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.image-review-row .image.main img {
+    display: block;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.image-review-row .image.main:hover {
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+.image-review-row .image.main:hover img {
+    transform: scale(1.08);
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 }
