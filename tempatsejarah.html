@@ -63,7 +63,9 @@
                     filosofi masyarakat pada abad ke-9. Relief-relief yang terdapat pada dinding candi menjadi bagian
                     penting yang membuat wisatawan dapat mengenal kehidupan dan nilai-nilai masyarakat pada masa lampau.
                 </p>
-
+                <ul class="actions special">
+                    <li><a href="https://injourneydestination.id/ " class="button primary">Selengkapnya</a></li>
+                </ul>
                 <!-- 2 -->
                 <h3 class="adat-title" style="text-align: left; margin-bottom: 1.5rem; margin-top: 3rem;">2. Pasar
                     Terapung Lok Baintan - Kalimantan Selatan</h3>
@@ -91,7 +93,10 @@
                     destinasi sejarah hidup yang menarik bagi wisatawan. Mereka datang untuk mengenal lebih dekat
                     bagaimana masyarakat lokal hidup berdampingan dengan alam.
                 </p>
-
+                <ul class="actions special">
+                    <li><a href="https://si-praswita.banjarkab.go.id/detail-destinasi2.php?id=119"
+                            class="button primary">Selengkapnya</a></li>
+                </ul>
                 <!-- 3 -->
                 <h3 class="adat-title" style="text-align: left; margin-bottom: 1.5rem; margin-top: 3rem;">3. Kota Tua
                     Jakarta - Jawa Barat</h3>
@@ -108,7 +113,10 @@
                     arsitektur, berfoto, sekaligus mengenal sejarah perkembangan kota Jakarta. Kawasan ini juga menjadi
                     salah satu titik kunjungan wisatawan yang ingin mengenal sejarah Jakarta.
                 </p>
-
+                <ul class="actions special">
+                    <li><a href="https://sites.google.com/view/klikkotatua?pli=1&authuser=0 "
+                            class="button primary">Selengkapnya</a></li>
+                </ul>
             </section>
 
         </div>
@@ -126,6 +134,29 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var targets = document.querySelectorAll(
+                    ".image-review-row, .adat-text, .actions.special"
+                );
+
+                if (!("IntersectionObserver" in window)) return;
+
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                targets.forEach(function (el) {
+                    el.classList.add("reveal");
+                    observer.observe(el);
+                });
+            });
+        </script>
     </div>
 </body>
 
