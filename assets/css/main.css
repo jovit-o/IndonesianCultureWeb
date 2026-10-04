@@ -3250,14 +3250,14 @@ input, select, textarea {
 
 		#wrapper.fade-in:before {
 			pointer-events: none;
-			-moz-transition: opacity 1s ease-in-out;
-			-webkit-transition: opacity 1s ease-in-out;
-			-ms-transition: opacity 1s ease-in-out;
-			transition: opacity 1s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity 0.4s ease-in-out;
+			-webkit-transition: opacity 0.4s ease-in-out;
+			-ms-transition: opacity 0.4s ease-in-out;
+			transition: opacity 0.4s ease-in-out;
+			-moz-transition-delay: 0.1s;
+			-webkit-transition-delay: 0.1s;
+			-ms-transition-delay: 0.1s;
+			transition-delay: 0.1s;
 			background: #1e252d;
 			content: '';
 			display: block;
@@ -4765,5 +4765,3 @@ input, select, textarea {
 .papegunungan-pin {left: 92%; top: 48%}
 /*yang kurang: Magelang, Tana Toraja, Jember, Padang*/
 /*buat halaman map*/
-
-

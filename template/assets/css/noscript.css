@@ -8,29 +8,41 @@
 
 /* Wrapper */
 
-	#wrapper {
-		background-color: #212931;
-		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-		background-size: auto,								auto,														100% auto;
-		background-position: center,								center,														top center;
-		background-repeat: repeat,								no-repeat,													no-repeat;
-		background-attachment: fixed,								fixed,														fixed;
-	}
+#wrapper {
+	background-color: #212931;
+	background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+	background-size: auto, auto, 100% auto;
+	background-position: center, center, top center;
+	background-repeat: repeat, no-repeat, no-repeat;
+	background-attachment: fixed, fixed, fixed;
+}
 
-		#wrapper.fade-in:before {
-			display: none;
-		}
+#wrapper.fade-in:before {
+	pointer-events: none;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-webkit-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+	/* durasi: 1s */
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0s;
+	/* jeda sebelum mulai: 0.75s */
+	background: #1e252d;
+	...
+}
 
 /* Intro */
 
-	body.is-preload #intro {
-		opacity: 1;
-	}
+body.is-preload #intro {
+	opacity: 1;
+}
 
-		body.is-preload #intro:not(.hidden) + #header + #nav {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-			opacity: 1;
-		}
+body.is-preload #intro:not(.hidden)+#header+#nav {
+	-moz-transform: none;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	opacity: 1;
+}
