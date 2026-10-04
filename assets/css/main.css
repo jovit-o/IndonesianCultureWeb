@@ -4759,9 +4759,19 @@ input, select, textarea {
 .bali-pin {left: 43%; top: 70%;}
 .yogyakarta-pin {left: 34%; top: 68%;}
 .magelang-pin {left: 32%; top: 62%}
-.tanatoraja-pin {left: 52%; top: 42%}
-/*jember  harusnya disini, cuma gara gara keramean ga muat pinnya*/
+.tanatoraja-pin {left: 52%; top: 40%}
+.jember-pin {left: 39%; top: 67%}
 .padang-pin {left: 14%; top: 30%}
 .papegunungan-pin {left: 92%; top: 48%}
-/*yang kurang: Magelang, Tana Toraja, Jember, Padang*/
-/*buat halaman map*/
+.kaliselatan-pin {left: 42.5%; top: 42%}
+.kalitimur-pin {left:45%; top: 23%}
+.sumautara-pin {left:11%; top: 14%}
+.sulaselatan-pin {left:52%; top:53%}
+
+<!-- 
+Pasar Terapung Lok Baintan - Kalimantan Selatan
+Jember Fashion Carnaval - Jember
+Tari Hudoq - Kalimantan Timur
+Festival Danau Toba - Sumatera Utara
+Konro - Sulawesi Selatan
+-->
