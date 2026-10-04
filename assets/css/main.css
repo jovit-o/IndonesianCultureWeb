@@ -4780,3 +4780,32 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
 	.adat-indent { margin-left: 1.4rem; }
 }
+
+.image-review-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 auto 2rem auto;
+}
+
+.image-review-row .image.main {
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin: 0;
+}
+
+.image-review-row .review-box {
+    flex: 1 1 50%;
+    min-width: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .image-review-row {
+        flex-direction: column;
+    }
+    .image-review-row .image.main,
+    .image-review-row .review-box {
+        max-width: 100%;
+        width: 100%;
+    }
+}
