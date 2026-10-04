@@ -4756,7 +4756,7 @@ input, select, textarea {
 
 /* each pin's position on the map */
 .jakarta-pin {left: 26.5%; top: 58%;}
-.bali-pin {left: 43%; top: 70%;}
+.bali-pin {lef  t: 43%; top: 70%;}
 .yogyakarta-pin {left: 34%; top: 68%;}
 .magelang-pin {left: 32%; top: 62%}
 .tanatoraja-pin {left: 52%; top: 40%}
@@ -4767,3 +4767,16 @@ input, select, textarea {
 .kalitimur-pin {left:45%; top: 23%}
 .sumautara-pin {left:11%; top: 14%}
 .sulaselatan-pin {left:52%; top:53%}
+/*buat halaman map*/
+
+/* paragraf sejajar dengan judul (angka + teks) */
+.adat-indent {
+	margin-left: 1.7rem;
+	text-indent: 2.5rem;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 736px) {
+	.adat-indent { margin-left: 1.4rem; }
+}
