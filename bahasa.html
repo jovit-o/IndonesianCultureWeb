@@ -9,6 +9,30 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        .image.main img {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border-radius: 6px;
+        }
+
+        .image.main:hover img {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
 </head>
 
 <body class="is-preload">
@@ -17,7 +41,7 @@
     <div id="wrapper" class="fade-in">
         <!-- Header -->
         <header id="header">
-            
+
         </header> <!-- BOX HOME PAGE -->
 
         <!-- Nav -->
@@ -27,8 +51,8 @@
                 <li><a href="culturalmap.html">Cultural Map</a></li>
                 <li><a href="kuliner.html">Kuliner</a></li>
                 <li><a href="tempatsejarah.html">Tempat Sejarah</a></li>
-                <li ><a href="seni.html">Seni</a></li>
-                <li ><a href="adat.html">Adat</a></li>
+                <li><a href="seni.html">Seni</a></li>
+                <li><a href="adat.html">Adat</a></li>
                 <li class="active"><a href="bahasa.html">Bahasa</a></li>
                 <li><a href="about.html">Tentang</a></li>
             </ul>
@@ -42,7 +66,9 @@
                     <h1>Bahasa<br />Indonesia</h1>
                 </header>
                 <h3 class="adat-title">1. Cara membeli</h3>
-                        
+                <div class="image main" style="max-width: 50%; margin: 0 auto 2rem auto;">
+                    <img src="images/bahasa_beras.jpg" alt="Beras di pasar tradisional" />
+                </div>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
                     Penjual : "Selamat pagi, mau beli apa?"
@@ -56,7 +82,9 @@
                 <p></p>
 
                 <h3 class="adat-title">2. Cara memesan makanan</h3>
-                        
+                <div class="image main" style="max-width: 50%; margin: 0 auto 2rem auto;">
+                    <img src="images/bahasa_pesan.jpg" alt="Pesanan makanan di restoran" />
+                </div>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
                     Pembeli : "Halo, saya ingin memesan."
@@ -64,84 +92,90 @@
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Halo, mau memesan apa?"
+                    Penjual : "Halo, mau memesan apa?"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Saya mau makanan yang paling enak dari restoran ini."
+                    Pembeli : "Saya mau makanan yang paling enak dari restoran ini."
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Baik, makanan yang paling enak dari restoran ini adalah batagor kita. Apakah mau memesan itu?"
+                    Penjual : "Baik, makanan yang paling enak dari restoran ini adalah batagor kita. Apakah mau memesan
+                    itu?"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Iya, saya mau memesan itu."
+                    Pembeli : "Iya, saya mau memesan itu."
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Apakah kakak, sekalian mau memesan sate ayam kita juga?"
+                    Penjual : "Apakah kakak, sekalian mau memesan sate ayam kita juga?"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Boleh, terimakasih."
+                    Pembeli : "Boleh, terimakasih."
                 </p>
 
                 <p></p>
 
                 <h3 class="adat-title">3. Cara membayar produk (tunai)</h3>
-
+                <div class="image main" style="max-width: 50%; margin: 0 auto 2rem auto;">
+                    <img src="images/bahasa_bayar.jpg" alt="Pembayaran di kasir" />
+                </div>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Apakah ini semua belanjaan anda?"
+                    Penjual : "Apakah ini semua belanjaan anda?"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Iya ini semua."
+                    Pembeli : "Iya ini semua."
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Baik, mau penbayaran pakai apa?"
+                    Penjual : "Baik, mau penbayaran pakai apa?"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Mau pakai tunai"
+                    Pembeli : "Mau pakai tunai"
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Baik, totalnya delapan puluh lima ribu (85.000)."
+                    Penjual : "Baik, totalnya delapan puluh lima ribu (85.000)."
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Pembeli :  "Baik, ini seratus ribu (100.000)."
+                    Pembeli : "Baik, ini seratus ribu (100.000)."
                 </p>
 
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Penjual :  "Berarti kembalian anda lima belas ribu (15.000)."
+                    Penjual : "Berarti kembalian anda lima belas ribu (15.000)."
                 </p>
 
                 <p></p>
 
                 <h3 class="adat-title">4. Meminta bantuan</h3>
-
+                <div class="image main" style="max-width: 50%; margin: 0 auto 2rem auto;">
+                    <img src="images/bahasa_tanya.png" alt="orang yang bertanya" />
+                </div>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
                     Warga 1 : "Permisi, bisakah Anda memberi tahu saya cara ke museum?
                 </p>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
-                    Warga 2 : "Untuk masuk ke dalam museum kakak harus membeli tiket di loket sebelah kiri dari patung sapi."
+                    Warga 2 : "Untuk masuk ke dalam museum kakak harus membeli tiket di loket sebelah kiri dari patung
+                    sapi."
                 </p>
                 <p class="adat-text"
                     style="text-indent: 50px; text-align: justify; line-height: 1.5; margin-bottom: 0px;">
@@ -149,25 +183,39 @@
                 </p>
 
                 <p></p>
-                
+
                 <!-- Lists -->
-				<h2>Kamus singkat Bahasa Indonesia</h2>
-				<div class="adat-text">
-					<div class="col-6 col-12-small">
-							<ul>
-								<li><strong>halo /ha·lo/</strong> kata yang digunakan untuk mengawali percakapan melalui telepon, kata seru untuk menarik perhatian (seseorang), ucapan salam untuk menyapa (seseorang) (contoh: Halo, apa kabar?)</li>
-								<li><strong>apa /apa/</strong> kata tanya untuk menanyakan nama (jenis, sifat) (contoh: kamu suka apa?)</li>
-								<li><strong>mau /mau/</strong> Sungguh-sungguh suka, hendak, suka akan, atau sudi (contoh: ia mau datang kalau dijemput)</li>
-							    <li><strong>saya /sa·ya/</strong> orang yang berbicara atau menulis (dalam ragam resmi atau biasa), aku (contoh : saya mau pergi ke pasar)</li>
-                                <li><strong>kita /ki·ta/</strong> kata yang berbicara bersama dengan orang lain termasuk yang diajak bicara (contoh : kita pergi ke Candi Borobudur)</li>
-                                <li><strong>terima kasih /te·ri·ma ka·sih/</strong> rasa syukur (contoh : terima kasih sudah membantu saya)</li>
-                                <li><strong>permisi /per·mi·si/</strong> izin, perkenan, minta maaf, minta izin (contoh : Permisi, saya mau lewat di depan.)</li>
-                                <li><strong>izin /izin/</strong> kata pernyataan mengabulkan (tidak melarang dan sebagainya) atau persetujuan yang membolehkan (contoh : Saya mau minta izin ke toilet sebentar.)</li>
-                                <li><strong>masuk /ma·suk/</strong> kata datang (pergi) ke dalam (ruangan, kamar, lingkungan, dan sebagainya) (contoh : Saya masuk ke restoran)</li>
-                                <li><strong>ke /ke/</strong> kata berfungsi sebagai kata depan (preposisi) yang menyatakan arah atau tujuan ke suatu tempat atau waktu, 
-                                    serta sebagai prefiks (imbuhan) 'ke-' untuk menyatakan tingkat, urutan, atau kumpulan. (contoh : Saya mau ke taman Pelangi)</li>
-                                <li>Lebih lengkapnya, bisa ke website <a href=https://kbbi.web.id target="_blank" rel="noopener noreferrer" style="color : red">KBBI online</a>.</li>
-							</ul>
+                <h2>Kamus singkat Bahasa Indonesia</h2>
+                <div class="adat-text">
+                    <div class="col-6 col-12-small">
+                        <ul>
+                            <li><strong>halo /ha·lo/</strong> kata yang digunakan untuk mengawali percakapan melalui
+                                telepon, kata seru untuk menarik perhatian (seseorang), ucapan salam untuk menyapa
+                                (seseorang) (contoh: Halo, apa kabar?)</li>
+                            <li><strong>apa /apa/</strong> kata tanya untuk menanyakan nama (jenis, sifat) (contoh: kamu
+                                suka apa?)</li>
+                            <li><strong>mau /mau/</strong> Sungguh-sungguh suka, hendak, suka akan, atau sudi (contoh:
+                                ia mau datang kalau dijemput)</li>
+                            <li><strong>saya /sa·ya/</strong> orang yang berbicara atau menulis (dalam ragam resmi atau
+                                biasa), aku (contoh : saya mau pergi ke pasar)</li>
+                            <li><strong>kita /ki·ta/</strong> kata yang berbicara bersama dengan orang lain termasuk
+                                yang diajak bicara (contoh : kita pergi ke Candi Borobudur)</li>
+                            <li><strong>terima kasih /te·ri·ma ka·sih/</strong> rasa syukur (contoh : terima kasih sudah
+                                membantu saya)</li>
+                            <li><strong>permisi /per·mi·si/</strong> izin, perkenan, minta maaf, minta izin (contoh :
+                                Permisi, saya mau lewat di depan.)</li>
+                            <li><strong>izin /izin/</strong> kata pernyataan mengabulkan (tidak melarang dan sebagainya)
+                                atau persetujuan yang membolehkan (contoh : Saya mau minta izin ke toilet sebentar.)
+                            </li>
+                            <li><strong>masuk /ma·suk/</strong> kata datang (pergi) ke dalam (ruangan, kamar,
+                                lingkungan, dan sebagainya) (contoh : Saya masuk ke restoran)</li>
+                            <li><strong>ke /ke/</strong> kata berfungsi sebagai kata depan (preposisi) yang menyatakan
+                                arah atau tujuan ke suatu tempat atau waktu,
+                                serta sebagai prefiks (imbuhan) 'ke-' untuk menyatakan tingkat, urutan, atau kumpulan.
+                                (contoh : Saya mau ke taman Pelangi)</li>
+                            <li>Lebih lengkapnya, bisa ke website <a href=https://kbbi.web.id target="_blank"
+                                    rel="noopener noreferrer" style="color : red">KBBI online</a>.</li>
+                        </ul>
             </section>
 
         </div>
@@ -185,6 +233,27 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var targets = document.querySelectorAll(".image.main, .adat-text");
+
+                if (!("IntersectionObserver" in window)) return;
+
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                targets.forEach(function (el) {
+                    el.classList.add("reveal");
+                    observer.observe(el);
+                });
+            });
+        </script>
     </div>
 </body>
 
